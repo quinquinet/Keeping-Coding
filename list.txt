@@ -1,0 +1,23 @@
+ressources:
+- The C programming language
+- Git documentation
+- learn-c.org
+- cppreference.com
+- OpenClassroom
+
+exercice web site:
+- exercism.org
+- adventofcode.com
+- Coding games
+
+small project:
+- Guess the number
+- tic-tac-toe game
+- conway's game of life
+
+middle project:
+- 
+
+big project:
+- chip-8
+- moteur jeu d'echec
