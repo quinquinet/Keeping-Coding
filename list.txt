@@ -16,7 +16,7 @@ small project:
 - conway's game of life
 
 middle project:
-- 
+- maze solver
 
 big project:
 - chip-8

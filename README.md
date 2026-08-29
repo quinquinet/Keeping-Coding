@@ -2,10 +2,41 @@
 
 # Keeping Coding
 
-This project has to goal to pursuit the introduction to the C programming language and other well-used language, including various ressources, link to exercise yourself, and few project to complete alone or in groups.
+This project has the goal to pursue the introduction to the C programming language and other well-used languages, including various resources, links to exercise yourself, and a few projects to complete alone or in groups.
 
 ## Presentation
 
-Each project is presented as follow :
-- A difficulty level from ⭐ to ⭐⭐⭐, depending on the complexity, the time and the need of the exercice.
-- 
+The project is presented as follow :
+- a resources folder containing useful informations, documentations ...
+- three main folders called 0x-level, each containing a set of exercises to complete in C language. Each folder is named after the level of difficulty of the exercises it contains (beginner, intermediate, advanced) and contains a list of exercises
+- Each 
+
+## Work Environment
+
+You can work in any environment that can write, compile and run C code.
+The recommended environment is to keep working on Linux and use a more advanced IDE than Vim. (e.g. Visual Studio Code, CLion, Eclipse, etc.)
+You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g. GDB) to compile and run your code.
+
+## How to use this project
+
+1- Create your own fork of this repository and clone it to your local machine.
+2- Create a new branch for your work. Keep the original branch clean and up to date with the main repository.
+3- Each exercise has already a `work` folder where you can work in it. You can create new files in the folder to complete the exercise.
+4- Once you have completed an exercise, you can test your code and make sure it works as expected.
+5- Once you are satisfied with your work, you can commit your changes and push them to your forked repository.
+You will be graded on your work and you can submit a pull request to the main repository if you want to share your work with the community.
+
+## Advices
+
+This project is designed to help you learn and improve your coding skills, but also to keep you practicing and giving you the good use and foundation to work in collaborative projects. Here are some advices to help you succeed:
+- **READ** the instructions carefully before starting to code. This a kind of job where you will need to do your own research and find the right solutions to the problems you will face. The instructions will give you a good idea of what is expected from you. Get use to reading documentations and searching for information online.
+- **PLAN** your work before starting to code. Take the time to understand the problem and think about the best way to solve it.
+- **TEST** your code frequently. Don't wait until the end to test your code. Test it as you go, and make sure it works as expected.
+- Solution are accessible, but you should try to solve the exercises by yourself before looking at them. The goal is to learn and improve your skills, not just to get the right answer. If you are stuck, ask someone for help.
+- This project **must not** be your only source of learning. You can learn from other similar and more advanced projects.
+- Keep a regular rythm, even if you work couple hours a week, **DON'T HAVE LONG BREAKS** (over weeks or months). You will lose your progress and your motivation, even 5 minutes to review a code is good to keep going.
+- Don't force yourself to work on projects you are tired of or you don't like. Try to find what you like and what you want to learn, this project is very incomplete and only review a small part of what programming really is. You can always come back to the project later.
+
+### Collaboration
+
+This project is open to collaboration and contributions from the community. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request.
