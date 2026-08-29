@@ -20,10 +20,15 @@ You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g.
 ## How to use this project
 
 1- Create your own fork of this repository and clone it to your local machine.
+
 2- Create a new branch for your work. Keep the original branch clean and up to date with the main repository.
-3- Each exercise has already a `work` folder where you can work in it. You can create new files in the folder to complete the exercise.
+
+3- Each exercise has already a empty `work` folder where you can work in it. You can create new files in the folder to complete the exercise.
+
 4- Once you have completed an exercise, you can test your code and make sure it works as expected.
+
 5- Once you are satisfied with your work, you can commit your changes and push them to your forked repository.
+
 You will be graded on your work and you can submit a pull request to the main repository if you want to share your work with the community.
 
 ## Advices
