@@ -8,8 +8,8 @@ This project has the goal to pursue the introduction to the C programming langua
 
 The project is presented as follow :
 - a resources folder containing useful informations, documentations ...
-- three main folders called 0x-level, each containing a set of exercises to complete in C language. Each folder is named after the level of difficulty of the exercises it contains (beginner, intermediate, advanced) and contains a list of exercises
-- Each 
+- three main C folders called 0x-c, each containing a set of exercises to complete in C language. Each folder is named after the level of difficulty of the exercises it contains (beginner, intermediate, advanced) and contains a list of exercises
+- other folders containing different exercises to work specific subjects.
 
 ## Work Environment
 
