@@ -1,0 +1,24 @@
+name: Automatic check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-exercises:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code recuperation
+        uses: actions/checkout@v4
+
+      - name: Tools installation
+        run: sudo apt-get update && sudo apt-get install -y gcc valgrind
+
+      - name: 01-00 check
+        if: always()
+        run: |
+          cd 01-c-beginner/00-guess-the-number
+          chmod +x check.sh
+          ./check.sh
