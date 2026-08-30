@@ -22,3 +22,10 @@ jobs:
           cd 01-c-beginner/00-guess-the-number
           chmod +x check.sh
           ./check.sh
+
+      - name: 01-02 check
+        if: always()
+        run: |
+          cd 01-c-beginner/02-ascii-game-of-life
+          chmod +x check.sh
+          ./check.sh
