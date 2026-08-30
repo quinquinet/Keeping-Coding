@@ -22,6 +22,7 @@
 #include <time.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
 #define WIDTH 80
 #define HEIGHT 24
