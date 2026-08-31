@@ -65,12 +65,9 @@ You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g.
 
 6/ You can then go in the Actions tab, here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
 
-7/ After validation, you can make a new **Pull Request** to show your work, or if any have any question/issue.
+7/ After validation, you can create a new **Pull Request** to show your work, or if any have any question/issue.
 
-You will be graded on your work and you can submit a pull request to the main repository if you want to share your work with the community.
-Each exercise has a `check.sh` script that will check your work and give you feedback on your code. You can run the script to check your work before submitting it (only on Linux).
-Each exercise has a `solution` folder containing a possible solution to the exercise. This is provided for reference and learning purposes. You can compare your work with the solution to **only when you have validated the exercise**.
-And each exercise has a `testing` folder containing test cases to validate your work. You can run the tests to check if your code works as expected by using `check.sh`.
+You can also find a `solution` for each exercise, look at it only when you have validated the exercise to compare your work. If you are stuck, **ask someone**.
 
 ## Advices
 
