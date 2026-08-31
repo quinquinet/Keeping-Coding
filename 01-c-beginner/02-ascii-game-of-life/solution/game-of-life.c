@@ -225,7 +225,10 @@ int main(int argc, char **argv)
     int     generation;
 
     if (argc < 2 || argc > 3)
+    {
+        printf("Invalid input count");
         return (-1);
+    }
 
     grid = create_grid();
     generation = atoi(argv[1]);
@@ -240,7 +243,7 @@ int main(int argc, char **argv)
     {
         if (read_grid(&grid, argv[2]) == INVALID_FILE_INPUT)
         {
-            printf("Invalid file input");
+            printf("Invalid input file");
             return (-1);
         }
     }

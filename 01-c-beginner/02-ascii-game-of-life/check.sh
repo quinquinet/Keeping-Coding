@@ -1,48 +1,49 @@
 #!/bin/bash
 
+NAME="ASCII Game of Life"
 EXO="work/game-of-life.c"
 BIN="game-of-life"
 
-echo "Compiling..."
+printf "Testing $NAME\n\n"
+printf "Compiling...\n"
 gcc -Wall -Wextra -Werror -o $BIN $EXO
 
 if [ $? -ne 0 ]; then
-    echo "Compilation failed."
+    printf "Compilation failed.\n"
     exit 1
 fi
 
-echo "Compilation succeeded."
-echo "Testing..."
+printf "Compilation succeeded.\n\n"
+printf "Testing...\n"
 
 FAIL=0
-for i in tests/test*; do
+
+shopt -s nullglob
+mapfile -t tests < <(printf '%s\n' testing/test/* | sort -V)
+
+for i in "${tests[@]}"; do
     if [ $FAIL -eq 1 ]; then
-        echo "Skipping remaining tests due to previous failure."
+        printf "Skipping remaining tests due to previous failure.\n\n"
         break
     fi
 
-    num=$(basename $i | sed 's/test//')
-    expected="tests/expected${num}"
+    num=$(basename $i)
+    expected="testing/expected/${num}"
 
-    gen=$(head -n 1 "$i")  # Read first line as generation count
-    file=$(head -n 2 "$i" | tail -n 1)  # Read second line as input file path
-    
-    if [ ! -f "$file" ]; then
-        actual=$(./$BIN "$gen")
-    else
-        actual=$(./$BIN "$gen" "$file")
-    fi
+    mapfile -t args < "$i"
+
+    actual=$(./"$BIN" "${args[@]}")
 
     exp=$(cat "$expected")
     
     if [ "$actual" == "$exp" ]; then
-        echo "Test $num succeeded."
+        printf "Test $num succeeded.\n"
     else
-        echo "Test $num failed."
-        echo "Expected:"
-        echo "$exp"
-        echo "Obtained:"
-        echo "$actual"
+        printf "Test $num failed.\n\n"
+        printf "Expected:\n"
+        printf "$exp\n\n"
+        printf "Obtained:\n"
+        printf "$actual\n\n"
         FAIL=1
     fi
 done
@@ -50,9 +51,9 @@ done
 rm -f $BIN
 
 if [ $FAIL -eq 1 ]; then
-    echo "Tests failed, check your code and try again."
+    printf "Tests failed, check your code and try again."
     exit 1
 else
-    echo "Exercise ASCII Game of Life completed."
+    printf "\nExercise $NAME completed."
     exit 0
 fi

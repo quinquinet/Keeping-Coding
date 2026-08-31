@@ -15,6 +15,7 @@
 /*        \|_______|\|_______|\|_______|\|__|\|__| \|__|\|_______|              */
 /*______________________________________________________________________________*/
 /*  THIS CODE MAY CONTAIN MISTAKES, PLEASE TELL IF YOU FIND ANY                 */
+/*  PLEASE CHECK THIS CODE ONLY AFTER VALIDATION OF THE EXERCISE                */
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -224,7 +225,10 @@ int main(int argc, char **argv)
     int     generation;
 
     if (argc < 2 || argc > 3)
+    {
+        printf("Invalid input count");
         return (-1);
+    }
 
     grid = create_grid();
     generation = atoi(argv[1]);
@@ -239,7 +243,7 @@ int main(int argc, char **argv)
     {
         if (read_grid(&grid, argv[2]) == INVALID_FILE_INPUT)
         {
-            printf("Invalid file input");
+            printf("Invalid input file");
             return (-1);
         }
     }

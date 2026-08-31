@@ -30,7 +30,7 @@ int main(int argc, char** argv)
     if (argc > 2)
         return (-1);
     
-    srand((unsigned)time(NULL));
+    srand(argc == 2 ? strtoul(argv[1], &argv[1], 10) : (unsigned)time(NULL));
     number = rand() % 100 + 1;  // Generate a random number between 1 and 100
     attempts = 5;
     while (attempts > 0)
