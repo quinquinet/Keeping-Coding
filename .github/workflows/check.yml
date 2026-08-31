@@ -2,6 +2,9 @@ name: Automatic check
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - 'check'
   pull_request:
     branches: [main]
 
