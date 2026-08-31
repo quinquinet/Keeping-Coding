@@ -13,4 +13,4 @@ echo "Compilation succeeded."
 
 rm -f guess-the-number1
 
-exit 1
+exit 0
