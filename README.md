@@ -59,7 +59,13 @@ You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g.
 
 4/ Once you have completed an exercise, you can test it by running `check.sh` (each exercise has one) or compile and test it yourself. You can add your own test in the `testing` folder. Please report any testing issue.
 
-5/ Once you are satisfied with your work, you can commit your changes and push them to your forked repository.
+### How to validate ?
+
+5/ When you are satisfied with your work, you can commit your changes and push them to your forked repository.
+
+6/ You can then go in the Actions tab, here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
+
+7/ After validation, you can make a new **Pull Request** to show your work, or if any have any question/issue.
 
 You will be graded on your work and you can submit a pull request to the main repository if you want to share your work with the community.
 Each exercise has a `check.sh` script that will check your work and give you feedback on your code. You can run the script to check your work before submitting it (only on Linux).
