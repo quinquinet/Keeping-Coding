@@ -30,7 +30,7 @@ To read and exercise :
 The project is contain multiple module to work and learn different topics, each `0x-language-name-of-module` folder is a module and each module has a list of exercise in folders name as `0x-name-of-exercise`, here is a list of the current modules (all modules and exercises within the modules are rated on the dificulty and time between ⭐ and ⭐⭐⭐) :
 
 | Module | Name | Level |
-| :--- | :---: | ---: |
+| :---: | :---: | :---: |
 | Module 00 | [C Re Introduction](00-c-re-introduction) | ⭐ |
 | Module 01 | [C Input/Output Games](01-c-io-games)     | ⭐ |
 | Module 02 | [C Intermediate](02-c-intermediate)       | ⭐⭐ |
