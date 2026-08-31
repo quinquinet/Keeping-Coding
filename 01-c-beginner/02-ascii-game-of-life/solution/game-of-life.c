@@ -15,6 +15,7 @@
 /*        \|_______|\|_______|\|_______|\|__|\|__| \|__|\|_______|              */
 /*______________________________________________________________________________*/
 /*  THIS CODE MAY CONTAIN MISTAKES, PLEASE TELL IF YOU FIND ANY                 */
+/*  PLEASE CHECK THIS CODE ONLY AFTER VALIDATION OF THE EXERCISE                */
 
 #include <stdlib.h>
 #include <stdio.h>

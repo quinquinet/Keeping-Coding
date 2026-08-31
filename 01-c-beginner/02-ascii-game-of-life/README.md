@@ -4,9 +4,13 @@
 
 This is a simple implementation of Conway's Game of Life in ASCII format. The Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
 
+## Ressources
+
+[What is Conway's Game of Life?](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+
 ## Instructions
 
-Create a program in a filed named `game-of-life.c` that simulates a simple version of Conway's Game of Life. The program should take 1 to 2 arguments:
+Create a program in a filed named `game-of-life.c` that simulates a simple version of Conway's Game of Life on a grid of **size 80x25** (width x height). The program should take 1 to 2 arguments:
 - first argument must be the number of generations to simulate (must be a positive integer, if not, display `Invalid generations number`)
 - second argument (optional) must be the path to a file containing the initial configuration
 
@@ -43,6 +47,6 @@ Output should be printed to the standard output, with each generation separated 
 ```
 The program should not display the initial configuration.
 
-## Ressources
+### Solution
 
-[What is Conway's Game of Life?](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+The given solution may contain mistakes, please report any issues you find. You can find the solution in the `solution` folder.

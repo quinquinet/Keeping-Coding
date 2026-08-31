@@ -1,16 +1,17 @@
 #!/bin/bash
-set -e
+
+EXO="work/guess-the-number.c"
+BIN="guess-the-number"
 
 echo "Compiling..."
-gcc -Wall -Wextra -Werror -o guess-the-number work/guess-the-number.c
+gcc -Wall -Wextra -Werror -o $BIN $EXO
 
 if [ $? -ne 0 ]; then
     echo "Compilation failed."
     exit 1
 fi
-
 echo "Compilation succeeded."
 
-rm -f guess-the-number1
+rm -f $BIN
 
 exit 0

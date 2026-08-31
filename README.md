@@ -32,18 +32,20 @@ You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g.
 You will be graded on your work and you can submit a pull request to the main repository if you want to share your work with the community.
 Each exercise has a `check.sh` script that will check your work and give you feedback on your code. You can run the script to check your work before submitting it (only on Linux).
 Each exercise has a `solution` folder containing a possible solution to the exercise. This is provided for reference and learning purposes. You can compare your work with the solution to **only when you have validated the exercise**.
+And each exercise has a `tests` folder containing test cases to validate your work. You can run the tests to check if your code works as expected by using `check.sh`.
 
 ## Advices
 
-This project is designed to help you learn and improve your coding skills, but also to keep you practicing and giving you the good use and foundation to work in collaborative projects. Here are some advices to help you succeed:
-- **READ** the instructions carefully before starting to code. This a kind of job where you will need to do your own research and find the right solutions to the problems you will face. The instructions will give you a good idea of what is expected from you. Get use to reading documentations and searching for information online.
+This project is designed to help you learn and improve your coding skills, but also to keepd you practicing and giving you the good use and foundation to work in collaborative projects. Here are some advices to help you succeed:
+- **READ** the instructions carefully before starting to code. This a kind of job where you will need to do your own research and find the right solutions to the problems you will face. The instructions will give you a good idea of what is expected from you. Get use to reading documentations and searching for information online. Even outside of this project, it is not called `README` for nothing.
 - **PLAN** your work before starting to code. Take the time to understand the problem and think about the best way to solve it.
 - **TEST** your code frequently. Don't wait until the end to test your code. Test it as you go, and make sure it works as expected.
 - Solution are accessible, but you should try to solve the exercises by yourself before looking at them. The goal is to learn and improve your skills, not just to get the right answer. If you are stuck, ask someone for help.
 - This project **must not** be your only source of learning. You can learn from other similar and more advanced projects.
 - Keep a regular rythm, even if you work couple hours a week, **DON'T HAVE LONG BREAKS** (over weeks or months). You will lose your progress and your motivation, even 5 minutes to review a code is good to keep going.
 - Don't force yourself to work on projects you are tired of or you don't like. Try to find what you like and what you want to learn, this project is very incomplete and only review a small part of what programming really is. You can always come back to the project later.
+- This project is **completely open** so even if you don't actively contribute to this project, I sugjest that you have a look at the structure of the project (workflows, scripts, tests, ..), you can learn a lot from it and give you ideas of what you can do on our own.
 
-### Collaboration
+## Collaboration
 
-This project is open to collaboration and contributions from the community. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request.
+This project is open to collaboration and contributions **to anyone**. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request.
