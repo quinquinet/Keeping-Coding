@@ -48,4 +48,4 @@ This project is designed to help you learn and improve your coding skills, but a
 
 ## Collaboration
 
-This project is open to collaboration and contributions **to anyone**. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request.
+This project is open to collaboration and contributions **to anyone**. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request. Not that is project is not a professional project, the structure might not be idle and the exercises might not be perfect or the best way to learn, it is meant to continue your introduction to programming by keeping coding.
