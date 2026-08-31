@@ -17,7 +17,7 @@ This project has the goal to pursue the introduction to the C programming langua
 ### Useful links
 
 To read and exercise :
-- A link the [42 Piscine from 2022](https://github.com/BennieBickles/Piscine-42)
+- A link to the [42 Piscine from 2022](https://github.com/BennieBickles/Piscine-42)
 - The [Git documentation](https://git-scm.com/docs)
 - [Learn C](learn-c.org)
 - [C++ Reference](https://cppreference.com/)
@@ -27,10 +27,12 @@ To read and exercise :
 
 ## Presentation
 
-The project is presented as follow :
-- a resources folder containing useful informations, documentations ...
-- three main C folders called 0x-c, each containing a set of exercises to complete in C language. Each folder is named after the level of difficulty of the exercises it contains (beginner, intermediate, advanced) and contains a list of exercises
-- other folders containing different exercises to work specific subjects.
+The project is contain multiple module to work and learn different topics, each `0x-language-name-of-module` folder is a module and each module has a list of exercise in folders name as `0x-name-of-exercise`, here is a list of the current modules :
+- Module 00 - [C Re Introduction](00-c-re-introduction) ⭐
+- Module 01 - [C Input/Output Games](01-c-io-games) ⭐
+- Module 02 - [C Intermediate](02-c-intermediate) ⭐⭐
+- Module 04 - [Work your Logic](04-work-your-logic) ⭐
+All modules and exercises within the modules are rated on the dificulty and time between ⭐ and ⭐⭐⭐.
 
 ## Work Environment
 
