@@ -1,4 +1,4 @@
-# Guess the Number
+# Guess the Number - ⭐
 
 ## Description
 
@@ -7,3 +7,7 @@ This is a simple number guessing game implemented in C. The program generates a 
 ## Instructions
 
 Create a program in a file named `guess-the-number.c` that take 
+
+### Solution
+
+The given solution may contain mistakes, please report any issues you find. You can find the solution in the `solution` folder.

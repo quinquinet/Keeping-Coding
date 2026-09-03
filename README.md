@@ -27,7 +27,7 @@ To read and exercise :
 
 ## Presentation
 
-The project is contain multiple module to work and learn different topics, each `0x-language-name-of-module` folder is a module and each module has a list of exercise in folders name as `0x-name-of-exercise`. All modules and exercises within the modules are rated on the dificulty and time between ⭐ and ⭐⭐⭐.
+The project is contain multiple module to work and learn different topics, each `0x-language-name-of-module` folder is a module and each module has a list of exercise in folders name as `0x-name-of-exercise`. All modules and exercises within the modules are rated on the dificulty and time between ⭐ and ⭐⭐⭐. Exercises difficulty is proportional to the module difficulty, a ⭐⭐⭐ exercise in a ⭐ module is easier than a ⭐⭐⭐ exercise in a ⭐⭐⭐ module. Module are not meant to be completed in order.
 
 Here is a list of the current modules () :
 
@@ -44,6 +44,7 @@ Here is a list of the current modules () :
 You can work in any environment that can write, compile and run C code.
 The recommended environment is to keep working on Linux and use a more advanced IDE than Vim. (e.g. Visual Studio Code, CLion, Eclipse, etc.)
 You will need to install a C compiler (e.g. GCC) and a debugger optionally (e.g. GDB) to compile and run your code.
+Your work validation will run on Linux, be sure that your code is compatible. (e.g. `unistd.h` is UNIX only)
 
 ## How to ... ?
 
