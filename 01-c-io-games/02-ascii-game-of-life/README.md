@@ -14,6 +14,8 @@ Create a program in a filed named `game-of-life.c` that simulates a simple versi
 - first argument must be the number of generations to simulate (must be a positive integer, if not, display `Invalid generations number`).
 - second argument (optional) must be the path to a file containing the initial configuration, if file not found, display `Invalid input file`
 
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 Input file are formatted as follows:
 - each line represents a row of the grid
 - each character represents a cell in the grid (`#` for alive cells, `.` for dead cells)

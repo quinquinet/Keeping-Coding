@@ -16,9 +16,9 @@ This module is meant to introduce you to the basics of the C standard Input/Outp
 
 1/ You will need to create some randomness in some exercises using `rand()` and `srand()` functions.
 
-2/ Understand what the **runtime** is and how games works in general.
+2/ Understand what the **runtime** is. Knowing how game work in general (rendering, game loop, etc) will be helpful.
 
-3/ Understand the rule of each games, those exercise are not very complex algorithmically.
+3/ Understand the rule of each games. Those exercise are not very complex algorithmically, the work is more about implementation.
 
 ### Solution
 
