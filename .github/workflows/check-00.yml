@@ -18,15 +18,18 @@ jobs:
       - name: Change directory
         run: cd 00-c-re-introduction
 
-      - name: Run all exercise checks
+      - name: Hello World
         shell: bash
         run: |
-          for dir in ./*; do
-            if [ -f "$dir/check.sh" ]; then
-              echo "Checking $dir"
-              cd "$dir"
-              chmod +x check.sh
-              ./check.sh
-              cd ..
-            fi
-          done
+          cd 00-hello-world
+          chmod +x ./check.sh
+          ./check.sh
+          cd ..
+
+      - name: Strlen
+        shell: bash
+        run: |
+          cd 01-strlen
+          chmod +x ./check.sh
+          ./check.sh
+          cd ..
