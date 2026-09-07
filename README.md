@@ -50,12 +50,12 @@ Your work validation will run on Linux, be sure that your code is compatible. (e
 
 ### How to start ?
 
-1/ Create your own *fork* of this repository (up-right button) and clone it to your local machine.
+**1/** Create your own *fork* of this repository (up-right button) and clone it to your local machine.
 ```
 git clone https://github.com/<username>/Keeping-Coding.git
 ```
 
-2/ In the cloned repository, put the original repository as a upstream remote to be able to pull the latest changes from the original repository.
+**2/** In the cloned repository, put the original repository as a upstream remote to be able to pull the latest changes from the original repository.
 ```
 git remote add upstream https://github.com/quinquinet/Keeping-Coding.git
 ```
@@ -66,26 +66,27 @@ origin https://github.com/<username>/Keeping-Coding.git
 upstream https://github.com/quinquinet/Keeping-Coding.git
 ```
 
-3/ To update any change from the original to your forked repository, you can run the following commands :
+**3/** To update any change from the original to your forked repository, you can run the following commands :
 ```
 git fetch upstream
 git merge upstream/main
 git push origin main        # Push can be done later
 ```
+**Don't forget to check for new updates.**
 
 ### How to work ?
 
-3/ Each exercise has already a empty `work` folder where you can work in it. You can create the required files in this folder to complete the exercise. **DON'T DELETE OR MODIFY ANY OTHER FILES OUTSIDE OF THE `work` FOLDERS**. Although you can read the structure files and try to understand how everything works.
+**4/** Each exercise has already a empty `work` folder where you can work in it. You can create the required files in this folder to complete the exercise. **DON'T DELETE OR MODIFY ANY OTHER FILES OUTSIDE OF THE `work` FOLDERS**. Although you can read the structure files and try to understand how everything works.
 
-4/ Once you have completed an exercise, you can test it by running `check.sh` (each exercise has one) or compile and test it yourself. You can add your own test in the `testing` folder. Please report any testing issue.
+**5/** Once you have completed an exercise, you can test it by running `check.sh` (each exercise has one) or compile and test it yourself. You can add your own test in the `testing` folder. Please report any testing issue.
 
 ### How to validate ?
 
-5/ When you are satisfied with your work, you can commit your changes and push them to your forked repository.
+**6/** When you are satisfied with your work, you can commit your changes and push them to your forked repository.
 
-6/ You can then go in the Actions tab, here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
+**7/** You can then go in the Actions tab, here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
 
-7/ After validation, you can create a new **Pull Request** to show your work, or if any have any question/issue.
+**8/** After validation, you can create a new **Pull Request** to show your work, or if any have any question/issue.
 
 You can also find a `solution` for each exercise, look at it only when you have validated the exercise to compare your work. If you are stuck, **ask someone**.
 
@@ -103,6 +104,6 @@ This project is designed to help you learn and improve your coding skills, but a
 
 ## Collaboration
 
-** Doing is the best way to learn !**
+**Doing is the best way to learn !**
 
 This project is open to collaboration and contributions **to anyone**. If you have any suggestions, improvements, or want to contribute with new exercises or resources, feel free to open an issue or submit a pull request. Not that is project is not a professional project, the structure might not be idle and the exercises might not be perfect or the best way to learn, it is meant to continue your introduction to programming by keeping coding.

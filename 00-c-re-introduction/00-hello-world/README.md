@@ -1,4 +1,4 @@
-# M00 - Exercise 01 - strlen - ⭐
+# M00 - Exercise 01 - Hello World - ⭐
 
 ## Description
 
@@ -7,7 +7,7 @@ Hello World !
 ## Instructions
 
 Allowed functions: `write()`
-Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output, followed by a newline.
+Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output.
 
 ## Help
 

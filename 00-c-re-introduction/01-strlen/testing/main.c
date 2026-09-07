@@ -17,10 +17,14 @@
 /*  THIS CODE MAY CONTAIN MISTAKES                                              */
 /*  PLEASE CHECK THIS CODE ONLY AFTER VALIDATION OF THE EXERCISE                */
 
-#include <unistd.h>
+#include <string.h>
+#include <stdio.h>
 
-int main(void)
+int ft_strlen(char *str);
+
+int main(int ac, char** av)
 {
-    write(1, "Hello World !", 15);
-    return (0);
+    if (ac != 2)
+        return (-1);
+    return ((int)strlen(av[1]) != ft_strlen(av[1]));
 }
