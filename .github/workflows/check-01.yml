@@ -21,8 +21,6 @@ jobs:
       - name: Run all exercise checks
         shell: bash
         run: |
-          set -e
-
           for dir in ./*; do
             if [ -f "$dir/check.sh" ]; then
               cd "$dir"
