@@ -25,10 +25,9 @@ jobs:
 
           for dir in ./*; do
             if [ -f "$dir/check.sh" ]; then
-              echo "Checking $dir"
               cd "$dir"
-              chmod +x check.sh
+              chmod +x ./check.sh
               ./check.sh
-              cd ..
+              cd ../
             fi
           done

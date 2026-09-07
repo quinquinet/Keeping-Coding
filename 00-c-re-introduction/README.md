@@ -12,6 +12,7 @@ In this module, you will be reviewing and implementing basic C functions.
 | Exercise 01 | [Strlen](01-strlen) | ⭐ |
 | Exercise 02 | [Strcpy](02-strcpy) | ⭐ |
 | Exercise 03 | [Strdup](03-strdup) | ⭐⭐ |
+| Exercise 04 | [Split](04-split) | ⭐⭐⭐ |
 
 ### Solution
 

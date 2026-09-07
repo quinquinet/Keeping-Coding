@@ -50,9 +50,28 @@ Your work validation will run on Linux, be sure that your code is compatible. (e
 
 ### How to start ?
 
-1/ Create your own *fork* of this repository and clone it to your local machine.
+1/ Create your own *fork* of this repository (up-right button) and clone it to your local machine.
+```
+git clone https://github.com/<username>/Keeping-Coding.git
+```
 
-2/ Create a *new branch* for your work. **Keep the *original branch* clean and up to date with the main repository for updates.**
+2/ In the cloned repository, put the original repository as a upstream remote to be able to pull the latest changes from the original repository.
+```
+git remote add upstream https://github.com/quinquinet/Keeping-Coding.git
+```
+You should have something like this :
+```
+$ git remote -v
+origin https://github.com/<username>/Keeping-Coding.git
+upstream https://github.com/quinquinet/Keeping-Coding.git
+```
+
+3/ To update any change from the original to your forked repository, you can run the following commands :
+```
+git fetch upstream
+git merge upstream/main
+git push origin main        # Push can be done later
+```
 
 ### How to work ?
 
