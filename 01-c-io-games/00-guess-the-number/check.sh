@@ -1,7 +1,7 @@
 #!/bin/bash
 
-EXO="work/guess-the-number.c"
-BIN="guess-the-number"
+EXO="work/guess_the_number.c"
+BIN="guess_the_number"
 
 echo "Compiling..."
 gcc -Wall -Wextra -Werror -o $BIN $EXO

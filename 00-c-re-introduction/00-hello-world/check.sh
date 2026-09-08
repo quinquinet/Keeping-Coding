@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NAME="Hello World"
-EXO="work/hello-world.c"
-BIN="hello-world"
+EXO="work/hello_world.c"
+BIN="hello_world"
 
 echo "Testing $NAME"
 echo "Compiling..."

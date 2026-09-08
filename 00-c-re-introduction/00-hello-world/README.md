@@ -1,4 +1,4 @@
-# M00 - Exercise 01 - Hello World - ⭐
+# M00 - Exercise 00 - Hello World - ⭐
 
 ## Description
 

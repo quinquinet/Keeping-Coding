@@ -1,20 +1,20 @@
 #!/bin/bash
 
 NAME="ASCII Game of Life"
-EXO="work/game-of-life.c"
-BIN="game-of-life"
+EXO="work/game_of_life.c"
+BIN="game_of_life"
 
-printf "Testing $NAME\n\n"
-printf "Compiling...\n"
+echo "Testing $NAME"
+echo "Compiling..."
 gcc -Wall -Wextra -Werror -o $BIN $EXO
 
 if [ $? -ne 0 ]; then
-    printf "Compilation failed.\n"
+    echo "Compilation failed."
     exit 1
 fi
 
-printf "Compilation succeeded.\n\n"
-printf "Testing...\n"
+echo "Compilation succeeded."
+echo "Testing..."
 
 FAIL=0
 
@@ -23,7 +23,7 @@ mapfile -t tests < <(printf '%s\n' testing/test/* | sort -V)
 
 for i in "${tests[@]}"; do
     if [ $FAIL -eq 1 ]; then
-        printf "Skipping remaining tests due to previous failure.\n\n"
+        echo "Skipping remaining tests due to previous failure."
         break
     fi
 
@@ -37,13 +37,13 @@ for i in "${tests[@]}"; do
     exp=$(cat "$expected")
     
     if [ "$actual" == "$exp" ]; then
-        printf "Test $num succeeded.\n"
+        echo "Test $num succeeded."
     else
-        printf "Test $num failed.\n\n"
-        printf "Expected:\n"
-        printf "$exp\n\n"
-        printf "Obtained:\n"
-        printf "$actual\n\n"
+        echo "Test $num failed."
+        echo "Expected:"
+        echo "$exp"
+        echo "Obtained:"
+        echo "$actual"
         FAIL=1
     fi
 done
@@ -51,9 +51,9 @@ done
 rm -f $BIN
 
 if [ $FAIL -eq 1 ]; then
-    printf "Tests failed, check your code and try again."
+    echo "Tests failed, check your code and try again."
     exit 1
 else
-    printf "\nExercise $NAME completed."
+    echo "Exercise $NAME completed."
     exit 0
 fi

@@ -1,14 +1,15 @@
 #!/bin/bash
 
-NAME="Strlen"
-BIN="ft_strlen"
-EXO="work/ft_strlen.c"
+NAME="Strdup"
+BIN="ft_strdup"
+EXO="work/ft_strdup.c"
 TEST="testing/main.c"
+FORBIDDEN='strcpy|strncpy|strlcpy|memcpy|memmove|string.h|strdup|strndup'
 
 echo "Testing $NAME"
 
-if grep -Eq '(^|[^[:alnum:]_])strlen[[:space:]]*\(' "$EXO"; then
-    echo "Forbidden function strlen() used."
+if grep -Eq "(^|[^[:alnum:]_])($FORBIDDEN)[[:space:]]*\(" "$EXO"; then
+    echo "Forbidden function used."
     exit 1
 fi
 

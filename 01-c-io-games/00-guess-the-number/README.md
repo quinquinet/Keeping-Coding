@@ -6,7 +6,7 @@ This is a simple number guessing game implemented in C. The program generates a 
 
 ## Instructions
 
-Create a program in a file named `guess-the-number.c` that take 
+Create a program in a file named `guess_the_number.c` that take 
 
 ### Solution
 
