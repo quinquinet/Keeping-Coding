@@ -50,7 +50,7 @@ Your work validation will run on Linux, be sure that your code is compatible. (e
 
 ### How to start ?
 
-**1/** Create your own *fork* of this repository (up-right button) and clone it to your local machine.
+**1/** Create your own *fork* of this repository [here](https://github.com/quinquinet/Keeping-Coding/fork) (up-right button) and clone it to your local machine.
 ```
 git clone https://github.com/<username>/Keeping-Coding.git
 ```
