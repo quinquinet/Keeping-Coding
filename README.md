@@ -84,11 +84,27 @@ git push origin main        # Push can be done later
 
 **6/** When you are satisfied with your work, you can commit your changes and push them to your forked repository.
 
-**7/** You can then go in the Actions tab, here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
+**7/** You can then go in the [Actions tab](https://github.com/quinquinet/Keeping-Coding/actions), here find the `Automatic check` workflow and click on `Run workflow`. The workflow will automatically compile, run, and test each exercise and validated your work.
 
 **8/** After validation, you can create a new **Pull Request** to show your work, or if any have any question/issue.
 
 You can also find a `solution` for each exercise, look at it only when you have validated the exercise to compare your work. If you are stuck, **ask someone**.
+
+### How to get some help ?
+
+There is a special place for discussion, [here](https://github.com/quinquinet/Keeping-Coding/discussions/categories/need-help) you can create a new discussion and ask for some help on your exercise.
+
+### How to report a bug, an issue ?
+
+Go to [Issue](https://github.com/quinquinet/Keeping-Coding/issues), create a **New issue**, select your issue category, fill the form and it's done !
+
+### How to contribute ?
+
+You have to way to contribute to this project :
+- **Become a collaborator**, create a [issue]() and ask to become a collaborator, or ask personally if you know a collaborator to this project.
+- If you want to contribute only **occasionally**, you can create issues and suggest new exercises and modules through [issue](https://github.com/quinquinet/Keeping-Coding/issues) or [pull request](https://github.com/quinquinet/Keeping-Coding/pulls). 
+
+## Discussion
 
 ## Advices
 
