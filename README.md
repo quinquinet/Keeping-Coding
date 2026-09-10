@@ -100,11 +100,15 @@ Go to [Issue](https://github.com/quinquinet/Keeping-Coding/issues), create a **N
 
 ### How to contribute ?
 
-You have to way to contribute to this project :
+You have two way to contribute to this project :
 - **Become a collaborator**, create a [issue]() and ask to become a collaborator, or ask personally if you know a collaborator to this project.
 - If you want to contribute only **occasionally**, you can create issues and suggest new exercises and modules through [issue](https://github.com/quinquinet/Keeping-Coding/issues) or [pull request](https://github.com/quinquinet/Keeping-Coding/pulls). 
 
 ## Discussion
+
+This repository has discussion channels open to everyone, those channels are lightly moderated, please be polite.
+Please keep all discussion in the correct category.
+Check updates, new exercises and new modules [here](https://github.com/quinquinet/Keeping-Coding/discussions/categories/announcements).
 
 ## Advices
 
