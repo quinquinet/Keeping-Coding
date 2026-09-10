@@ -17,14 +17,25 @@
 /*  THIS CODE MAY CONTAIN MISTAKES                                              */
 /*  PLEASE CHECK THIS CODE ONLY AFTER VALIDATION OF THE EXERCISE                */
 
+#include <stdio.h>
+
 char **ft_split(char *str, char delim);
 
 int main(int ac, char** av)
 {
+    int i = 0;
+
     if (ac != 3)
         return (-1);
 
-    char **output = ft_split(av[1], av[2][0]);
+    char **output;
+    output = ft_split(av[1], av[2][0]);
+
+    while (output[i])
+    {
+        printf("%s\n", output[i]);
+        i++;
+    }
 
     return (0);
 }

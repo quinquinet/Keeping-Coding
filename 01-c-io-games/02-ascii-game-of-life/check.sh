@@ -31,9 +31,12 @@ for i in "${tests[@]}"; do
     expected="testing/expected/${num}"
 
     mapfile -t args < "$i"
+    for ((k = 0; k < ${#args[@]}; k++)); do
+        args[k]="${args[k]%$'\r'}"
+        args[k]="${args[k]//\"/}"
+    done
 
     actual=$(./"$BIN" "${args[@]}")
-
     exp=$(cat "$expected")
     
     if [ "$actual" == "$exp" ]; then
@@ -41,9 +44,9 @@ for i in "${tests[@]}"; do
     else
         echo "Test $num failed."
         echo "Expected:"
-        echo "$exp"
+        echo "$exp" | cat -e
         echo "Obtained:"
-        echo "$actual"
+        echo "$actual" | cat -e
         FAIL=1
     fi
 done

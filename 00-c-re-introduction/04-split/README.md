@@ -11,6 +11,7 @@ Create a function named `ft_split` in a file named `ft_split.c` that takes a str
 ```c
 char **ft_split(char *str, char delim);
 ```
+The output array should be terminated by a NULL pointer.
 
 ### Solution
 

@@ -76,8 +76,6 @@ char **ft_split(char *str, char delim)
                 inword = 0;
                 len = str - start;
                 out[i] = (char *)malloc((len + 1) * sizeof(char));
-                if (!out[i])
-                    return (NULL);
                 j = 0;
                 while (j < len)
                 {
@@ -101,8 +99,6 @@ char **ft_split(char *str, char delim)
     {
         len = str - start;
         out[i] = (char *)malloc((len + 1) * sizeof(char));
-        if (!out[i])
-            return (NULL);
         j = 0;
         while (j < len)
         {

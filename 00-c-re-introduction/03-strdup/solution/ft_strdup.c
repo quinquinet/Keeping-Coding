@@ -28,6 +28,8 @@ char *ft_strdup(char *src)
     while (src[i])
         i++;
     dest = (char*)malloc((i + 1) * sizeof(char));
+    if (!dest)
+        return (NULL);
     i = 0;
     while (src[i])
     {
