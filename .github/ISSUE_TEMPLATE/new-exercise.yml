@@ -24,11 +24,23 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: level
+    attributes:
+      label: Exercise difficulty
+      options:
+        - ⭐
+        - ⭐⭐
+        - ⭐⭐⭐
+        - I don't know
+    validations:
+      required: true
+
   - type: textarea
     id: description
     attributes:
       label: Description
-      description: Describe your exercise, what are the major learning points ? What is the difficulty ? etc.
+      description: Describe your exercise, what are the major learning points, etc.
     validations:
       required: true
 
