@@ -52,7 +52,7 @@ Your work validation will run on Linux, be sure that your code is compatible. (e
 
 **1/** Create your own *fork* of this repository [here](https://github.com/quinquinet/Keeping-Coding/fork) (up-right button) and clone it to your local machine using :
 ```
-git clone https://github.com/<username>/Keeping-Coding.git
+git clone https://github.com/<YOUR_USERNAME>/Keeping-Coding.git
 ```
 You now have a copy of this repository on your GitHub account and on your local machine.
 
@@ -63,7 +63,7 @@ git remote add upstream https://github.com/quinquinet/Keeping-Coding.git
 You should have something like this :
 ```
 $ git remote -v
-origin https://github.com/<username>/Keeping-Coding.git
+origin https://github.com/<YOUR_USERNAME>/Keeping-Coding.git
 upstream https://github.com/quinquinet/Keeping-Coding.git
 ```
 
