@@ -30,3 +30,19 @@ jobs:
           chmod +x ./check.sh
           ./check.sh
           cd ../..
+
+      - name: Strcpy
+        shell: bash
+        run: |
+          cd 00-c-re-introduction/01-strcpy
+          chmod +x ./check.sh
+          ./check.sh
+          cd ../..
+
+      - name: Strcpy
+        shell: bash
+        run: |
+          cd 00-c-re-introduction/01-strcpy
+          chmod +x ./check.sh
+          ./check.sh
+          cd ../..
