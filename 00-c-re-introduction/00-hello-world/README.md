@@ -6,7 +6,7 @@ Hello World !
 
 ## Instructions
 
-Allowed functions: `write()`
+Allowed functions: *`write`*
 Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output.
 
 ## Help

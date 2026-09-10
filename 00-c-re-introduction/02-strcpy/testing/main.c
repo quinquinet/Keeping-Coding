@@ -19,16 +19,28 @@
 
 #include <string.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 char *ft_strcpy(char *dest, char *src);
 
 int main(int ac, char** av)
 {
-    if (ac != 3)
+    if (ac != 2)
         return (-1);
 
-    char* ft_result = ft_strcpy(av[2], av[1]);
+    char *src = av[1];
+    char *ft_dest = malloc(strlen(src) + 1);
+    char *real_dest = malloc(strlen(src) + 1);
 
-    return (strcmp(ft_result, av[2]));
+    if (!ft_dest || !real_dest)
+        return (-1);
+
+    char *ft_result = ft_strcpy(ft_dest, src);
+    char *real_result = strcpy(real_dest, src);
+
+    int ret = strcmp(ft_result, real_result);
+
+    free(ft_dest);
+    free(real_dest);
+
+    return (ret);
 }

@@ -6,12 +6,18 @@ EXO="work/ft_strcpy.c"
 TEST="testing/main.c"
 FORBIDDEN='strcpy|strncpy|strlcpy|memcpy|memmove|string.h'
 
+echo "Testing $NAME"
+
 if grep -Eq "(^|[^[:alnum:]_])($FORBIDDEN)[[:space:]]*\(" "$EXO"; then
     echo "Forbidden function used."
     exit 1
 fi
 
-echo "Testing $NAME"
+if grep -Eq "#include[[:space:]]*[<\"]([^>\"]*\/)?($FORBIDDEN)[>\"]" "$EXO"; then
+    echo "Forbidden header included."
+    exit 1
+fi
+
 echo "Compiling..."
 gcc -Wall -Wextra -Werror -o $BIN $TEST $EXO
 

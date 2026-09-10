@@ -18,7 +18,7 @@
 /*  PLEASE CHECK THIS CODE ONLY AFTER VALIDATION OF THE EXERCISE                */
 
 #include <string.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 char *ft_strdup(char *src);
 
@@ -27,8 +27,17 @@ int main(int ac, char **av)
     if (ac != 2)
         return (-1);    
 
-    char* dest;
-    dest = ft_strdup(av[1]);
-    printf("dest: %s$\n", dest);
-    return (strcmp(dest, av[1]));
+    char *src = av[1];
+    char *ft_dest;
+    char *real_dest;
+    
+    ft_dest = ft_strdup(src);
+    real_dest = strdup(src);
+
+    int ret = strcmp(ft_dest, real_dest);
+
+    free(ft_dest);
+    free(real_dest);
+
+    return (ret);
 }

@@ -3,8 +3,20 @@
 NAME="Hello World"
 EXO="work/hello_world.c"
 BIN="hello_world"
+FORBIDDEN='printf|stdio.h|stdlib.h|string.h'
 
 echo "Testing $NAME"
+
+if grep -Eq "(^|[^[:alnum:]_])($FORBIDDEN)[[:space:]]*\(" "$EXO"; then
+    echo "Forbidden function used."
+    exit 1
+fi
+
+if grep -Eq "#include[[:space:]]*[<\"]([^>\"]*\/)?($FORBIDDEN)[>\"]" "$EXO"; then
+    echo "Forbidden header included."
+    exit 1
+fi
+
 echo "Compiling..."
 gcc -Wall -Wextra -Werror -o $BIN $EXO
 

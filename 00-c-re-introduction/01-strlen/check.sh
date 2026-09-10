@@ -4,11 +4,17 @@ NAME="Strlen"
 BIN="ft_strlen"
 EXO="work/ft_strlen.c"
 TEST="testing/main.c"
+FORBIDDEN='strcpy|strncpy|strlcpy|memcpy|memmove|string.h'
 
 echo "Testing $NAME"
 
-if grep -Eq '(^|[^[:alnum:]_])strlen[[:space:]]*\(' "$EXO"; then
-    echo "Forbidden function strlen() used."
+if grep -Eq "(^|[^[:alnum:]_])($FORBIDDEN)[[:space:]]*\(" "$EXO"; then
+    echo "Forbidden function used."
+    exit 1
+fi
+
+if grep -Eq "#include[[:space:]]*[<\"]([^>\"]*\/)?($FORBIDDEN)[>\"]" "$EXO"; then
+    echo "Forbidden header included."
     exit 1
 fi
 

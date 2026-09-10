@@ -13,6 +13,11 @@ if grep -Eq "(^|[^[:alnum:]_])($FORBIDDEN)[[:space:]]*\(" "$EXO"; then
     exit 1
 fi
 
+if grep -Eq "#include[[:space:]]*[<\"]([^>\"]*\/)?($FORBIDDEN)[>\"]" "$EXO"; then
+    echo "Forbidden header included."
+    exit 1
+fi
+
 echo "Compiling..."
 gcc -Wall -Wextra -Werror -o $BIN $TEST $EXO
 
