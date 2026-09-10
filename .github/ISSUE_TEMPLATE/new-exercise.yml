@@ -1,0 +1,41 @@
+name: Propose a new exercise
+description: Propose a new exercise to be added to the repository. Please provide a title, a description and the estimated level of difficulty.
+title: "[PROPOSITION] "
+labels: ["enhancement", "new exercise"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Exercise name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Suggested module
+      options:
+        - 00 - C Re Introduction
+        - 01 - C Input/Output Games
+        - 02 - C Intermediate
+        - 03 - C Advanced
+        - 04 - Work your Logic
+        - 0x - New Module
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe your exercise, what are the major learning points ? What is the difficulty ? etc.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am ready to contribute to the implementation by Pull Request or Collaboration.
+          required: false
