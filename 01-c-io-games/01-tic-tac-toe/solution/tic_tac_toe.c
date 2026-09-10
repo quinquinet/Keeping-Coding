@@ -20,6 +20,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 typedef char** Grid;
 
@@ -94,7 +95,6 @@ void draw(Grid *grid)
             tiles[(i * 12) + (j * 2)] = (*grid)[i][j];
             j++;
         }
-        printf("\n");
         i++;
     }
     printf("%s", tiles);
@@ -106,26 +106,48 @@ int main(void)
     int     x;
     int     y;
     char    player;
+    bool    firstTry;
+    char    x_char;
+    char    y_char;
+    int     next;
+    int     input_count;
 
     grid = create_grid();
     player = 'X';
+    firstTry = true;
     while(1)
     {
-        printf("Input: ");
-        if (scanf("%d %d", &x, &y) != 2)
+        if (firstTry)
+            printf("Player %c, your move : ", player);
+
+        input_count = scanf(" %c%c", &x_char, &y_char);
+        next = getchar();
+        if (input_count != 2 ||
+            x_char < '1' || x_char > '3' ||
+            y_char < '1' || y_char > '3' ||
+            (next != '\n' && next != EOF))
         {
-            printf("Please enter a valid integer.\n");
+            while (next != '\n' && next != EOF)
+                next = getchar();
+            firstTry = false;
+            printf("Invalid input, try again : ");
             continue;
         }
-        if (x < 0 || x > 2 || y < 0 || y > 2)
+
+        x = x_char - '0';
+        y = y_char - '0';
+
+        if (x < 1 || x > 3 || y < 1 || y > 3)
         {
-            printf("Invalid inputs.");
+            firstTry = false;
+            printf("Invalid input, try again : ");
             continue;
         }
-        if (grid[y][x] == ' ')
+
+        if (grid[x - 1][y - 1] == ' ')
         {
-            printf("Valid inputs.\n");
-            grid[y][x] = player;
+            firstTry = true;
+            grid[x - 1][y - 1] = player;
             draw(&grid);
             if (check_win(&grid))
             {
@@ -136,7 +158,8 @@ int main(void)
         }
         else
         {
-            printf("Cell already fill.");
+            firstTry = false;
+            printf("Cell already taken, try again : ");
             continue;
         }
     }

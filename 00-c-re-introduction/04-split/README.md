@@ -13,6 +13,8 @@ char **ft_split(char *str, char delim);
 ```
 The output array should be terminated by a NULL pointer.
 
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 ### Solution
 
 The given solution may contain mistakes, please report any issues you find. You can find the solution in the `solution` folder.

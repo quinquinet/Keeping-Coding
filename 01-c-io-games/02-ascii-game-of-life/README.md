@@ -55,6 +55,7 @@ Output should be printed to the standard output, with each generation separated 
 ....##....
 ```
 The program should not display the initial configuration.
+**Make sure that you have free every allocated memory and close every opened file before the program ends.**
 
 ### Solution
 

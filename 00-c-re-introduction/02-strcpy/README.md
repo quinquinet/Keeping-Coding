@@ -12,6 +12,8 @@ Create a function named `ft_strcpy` in a file named `ft_strcpy.c` that takes two
 char *ft_strcpy(char *dest, char *src);
 ```
 
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 ### Solution
 
 The given solution may contain mistakes, please report any issues you find. You can find the solution in the `solution` folder.

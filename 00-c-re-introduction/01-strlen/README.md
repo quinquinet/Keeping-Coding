@@ -12,6 +12,8 @@ Create a function named `ft_strlen` in a file named `ft_strlen.c` that takes a s
 int ft_strlen(char *str);
 ```
 
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 ### Solution
 
 The given solution may contain mistakes, please report any issues you find. You can find the solution in the `solution` folder.

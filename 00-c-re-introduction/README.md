@@ -2,7 +2,7 @@
 
 ## Description
 
-In this module, you will be reviewing and implementing basic C functions. 
+In this module, you will be reviewing and re-implementing basic C functions. 
 
 ## Exercises
 

@@ -9,6 +9,8 @@ Hello World !
 Allowed functions: *`write`*
 Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output.
 
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 ## Help
 
 `write()` is part of the `unistd.h` header file, `uni` meaning UNIX. If you are on Windows, your program **might** not compile depending on your setup as `write()` is not native on Windows. 
