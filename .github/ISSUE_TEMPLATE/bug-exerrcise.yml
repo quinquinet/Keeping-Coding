@@ -1,0 +1,42 @@
+name: Issue in exercise
+description: Signal a bug in an exercise (wrong test, compilation error, etc.)
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - 00 - C Re Introduction
+        - 01 - C Input/Output Games
+        - 02 - C Intermediate
+        - 03 - C Advanced
+        - 04 - Work your Logic
+    validations:
+      required: true
+
+  - type: input
+    id: exercice
+    attributes:
+      label: Exercise number - name
+      placeholder: "ex: 00 - Hello World"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Issue description
+      placeholder: "ex: The test for exercise 01-hello-world fails even though the code is correct."
+      description: What is the problem? What is the expected behavior? What is the actual behavior?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Precise steps, or command that triggers the problem
+    validations:
+      required: false

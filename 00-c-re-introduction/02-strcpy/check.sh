@@ -37,6 +37,10 @@ for i in "${tests[@]}"; do
     num=$(basename $i)
 
     mapfile -t args < "$i"
+    for ((k = 0; k < ${#args[@]}; k++)); do
+        args[k]="${args[k]%$'\r'}"
+        args[k]="${args[k]//\"/}"
+    done
 
     ./"$BIN" "${args[@]}"
     actual=$?

@@ -22,7 +22,7 @@ jobs:
           set -e
           for dir in ./*; do
             if [ -f "$dir/check.sh" ]; then
-              echo "Checking $dir"
+              echo "In $dir"
               (
                 cd "$dir"
                 chmod +x ./check.sh
