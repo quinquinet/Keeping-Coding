@@ -15,34 +15,18 @@ jobs:
       - name: Tools installation
         run: sudo apt-get update && sudo apt-get install -y gcc valgrind
 
-      - name: Hello World
+      - name: Checking exercises
         shell: bash
         run: |
-          cd 00-c-re-introduction/00-hello-world
-          chmod +x ./check.sh
-          ./check.sh
-          cd ../..
-
-      - name: Strlen
-        shell: bash
-        run: |
-          cd 00-c-re-introduction/01-strlen
-          chmod +x ./check.sh
-          ./check.sh
-          cd ../..
-
-      - name: Strcpy
-        shell: bash
-        run: |
-          cd 00-c-re-introduction/01-strcpy
-          chmod +x ./check.sh
-          ./check.sh
-          cd ../..
-
-      - name: Strcpy
-        shell: bash
-        run: |
-          cd 00-c-re-introduction/01-strcpy
-          chmod +x ./check.sh
-          ./check.sh
-          cd ../..
+          cd 00-c-re-introduction
+          set -e
+          for dir in ./*; do
+            if [ -f "$dir/check.sh" ]; then
+              echo "Checking $dir"
+              (
+                cd "$dir"
+                chmod +x ./check.sh
+                ./check.sh
+              ) || exit 1
+            fi
+          done
