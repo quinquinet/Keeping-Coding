@@ -50,10 +50,11 @@ Your work validation will run on Linux, be sure that your code is compatible. (e
 
 ### How to start ?
 
-**1/** Create your own *fork* of this repository (up-right button) and clone it to your local machine.
+**1/** Create your own *fork* of this repository [here](https://github.com/quinquinet/Keeping-Coding/fork) (up-right button) and clone it to your local machine using :
 ```
-git clone https://github.com/<username>/Keeping-Coding.git
+git clone https://github.com/<YOUR_USERNAME>/Keeping-Coding.git
 ```
+You now have a copy of this repository on your GitHub account and on your local machine.
 
 **2/** In the cloned repository, put the original repository as a upstream remote to be able to pull the latest changes from the original repository.
 ```
@@ -62,7 +63,7 @@ git remote add upstream https://github.com/quinquinet/Keeping-Coding.git
 You should have something like this :
 ```
 $ git remote -v
-origin https://github.com/<username>/Keeping-Coding.git
+origin https://github.com/<YOUR_USERNAME>/Keeping-Coding.git
 upstream https://github.com/quinquinet/Keeping-Coding.git
 ```
 
@@ -100,11 +101,15 @@ Go to [Issue](https://github.com/quinquinet/Keeping-Coding/issues), create a **N
 
 ### How to contribute ?
 
-You have to way to contribute to this project :
+You have two way to contribute to this project :
 - **Become a collaborator**, create a [issue]() and ask to become a collaborator, or ask personally if you know a collaborator to this project.
 - If you want to contribute only **occasionally**, you can create issues and suggest new exercises and modules through [issue](https://github.com/quinquinet/Keeping-Coding/issues) or [pull request](https://github.com/quinquinet/Keeping-Coding/pulls). 
 
 ## Discussion
+
+This repository has discussion channels open to everyone, those channels are lightly moderated, please be polite.
+Please keep all discussion in the correct category.
+Check updates, new exercises and new modules [here](https://github.com/quinquinet/Keeping-Coding/discussions/categories/announcements).
 
 ## Advices
 
