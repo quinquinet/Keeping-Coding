@@ -8,6 +8,8 @@ Implement a C version of the [Tic Tac Toe game](https://en.wikipedia.org/wiki/Ti
 
 ## Instructions
 
+Allowed functions: *All functions of the std libraries*
+
 Create a program in a file named `tic_tac_toe.c` that implements a 2 players Tic Tac Toe game (meaning that the game is played by 2 human players, so you don't need to implement any AI).
 The game should start with player 1 (X) and then player 2 (O) and so on. At each turn, the program should ask the current player his input as such `Player X, your move : ` or `Player O, your move : ` then wait for player input.
 The input should be given as follow : `row*10+column` where both *row* and *column* are integers between 1 and 3 (inclusive). If the input is invalid (not in the range or an other character than a digit), the program should display on a new line `Invalid input, try again : ` until the player gives valid inputs.
@@ -61,6 +63,8 @@ X|O|O
  | |X
 Player X won !
 ```
+
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
 
 **Make sure that you have free every allocated memory and close every opened file before the program ends.**
 

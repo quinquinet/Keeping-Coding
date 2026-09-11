@@ -8,6 +8,8 @@ This is a simple number guessing game implemented in C. The program generates a 
 
 ## Instructions
 
+Allowed functions: *All functions of the std libraries*
+
 Create a program in a file named `guess_the_number.c` that takes none argument. This program is an implementation of a Guess the Number game, a 1 player game where the player must guess a random number generated between 1 and 100 in the least number of attempt. At each the program ask `Guess the number : `, then the player must in put a number between `1` and `100`, if the input is not valid, the program should display `Please enter a valid integer` and then ask again `Guess the number : ` on a new line.
 
 If the guess is lower or greater than the number the program should display `Number to find is lower/greater than <guess>` and then ask again `Guess the number : ` on a new line.
@@ -30,6 +32,8 @@ Congratulation ! You find the number 15 in 5 attempts
 ```
 
 Only valid guess counts as attempts.
+
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
 
 **Make sure that you have free every allocated memory and close every opened file before the program ends.**
 

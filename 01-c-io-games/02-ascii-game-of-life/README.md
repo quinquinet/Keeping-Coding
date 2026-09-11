@@ -11,6 +11,7 @@ This is a simple implementation of Conway's Game of Life in ASCII format. The Ga
 ## Instructions
 
 Allowed functions: *All functions of the std libraries*
+
 Create a program in a filed named `game_of_life.c` that simulates a simple version of Conway's Game of Life on a grid of **size 80x24** (width x height). The program should take 1 to 2 arguments: (if the argument count is not valid, the program should display `Invalid input count` as a priority)
 - first argument must be the number of generations to simulate (must be a positive integer, if not, display `Invalid generations number`).
 - second argument (optional) must be the path to a file containing the initial configuration, if file not found, display `Invalid input file`
@@ -56,6 +57,9 @@ Output should be printed to the standard output, with each generation separated 
 ....##....
 ```
 The program should not display the initial configuration.
+
+File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
+
 **Make sure that you have free every allocated memory and close every opened file before the program ends.**
 
 ### Solution

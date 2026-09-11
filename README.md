@@ -1,6 +1,6 @@
 <img width="512" alt="ascii-art-image" src="https://github.com/user-attachments/assets/84338c7e-9b43-4289-a98f-b360147b055c" />
 
-# Keeping Coding
+# Keeping Coding v.0.1.0
 
 This project has the goal to pursue the introduction to the C programming language and other well-used languages, including various resources, links to exercise yourself, and a few projects to complete alone or in groups.
 
