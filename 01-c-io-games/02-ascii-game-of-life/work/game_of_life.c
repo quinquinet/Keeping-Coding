@@ -230,14 +230,15 @@ int main(int argc, char **argv)
         return (-1);
     }
 
-    grid = create_grid();
     generation = atoi(argv[1]);
-
+    
     if (generation < 0)
     {
         printf("Invalid generations number");
         return (-1);
     }
+
+    grid = create_grid();
 
     if (argc == 3)
     {
