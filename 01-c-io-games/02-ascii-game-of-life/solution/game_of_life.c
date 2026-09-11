@@ -245,6 +245,7 @@ int main(int argc, char **argv)
         if (read_grid(&grid, argv[2]) == INVALID_FILE_INPUT)
         {
             printf("Invalid input file");
+            free_grid(&grid);
             return (-1);
         }
     }
@@ -258,7 +259,8 @@ int main(int argc, char **argv)
         generation--;
     }
 
-    free_grid(&grid);
+    if (grid)
+        free_grid(&grid);
 
     return (0);
 }
