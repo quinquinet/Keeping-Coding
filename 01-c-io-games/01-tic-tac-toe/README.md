@@ -1,5 +1,7 @@
 # M01 - Exercise 01 - Tic Tac Toe - ⭐⭐
 
+**⚠ This exercise does not comport a check.sh and so it can't be tested and validate. This is not a reason to skip it. The testing is in progress.**
+
 ## Description
 
 Implement a C version of the [Tic Tac Toe game](https://en.wikipedia.org/wiki/Tic-tac-toe) for 2 players. The game should be played in the console, and the players should take turns to place their marks (X or O) on a 3x3 grid. The game should check for a win or a draw after each move and display the result accordingly.

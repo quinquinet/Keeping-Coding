@@ -36,7 +36,12 @@ for i in "${tests[@]}"; do
         args[k]="${args[k]//\"/}"
     done
 
-    actual=$(./"$BIN" "${args[@]}")
+    if ! actual=$(valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=1 "./$BIN" "${args[@]}"); then
+        echo "Test $num failed due to Valgrind memory error."
+        FAIL=1
+        continue
+    fi
+
     exp=$(cat "$expected")
     
     if [ "$actual" == "$exp" ]; then

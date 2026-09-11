@@ -32,8 +32,8 @@ int main(int argc, char** argv)
     
     srand(argc == 2 ? strtoul(argv[1], &argv[1], 10) : (unsigned)time(NULL));
     number = rand() % 100 + 1;
-    attempts = 5;
-    while (attempts > 0)
+    attempts = 0;
+    while (1)
     {
         printf("Guess the number : ");
         if (scanf("%d", &guess) != 1)
@@ -41,30 +41,29 @@ int main(int argc, char** argv)
             int c;
             while ((c = getchar()) != '\n' && c != EOF)
                 ;
-            printf("Please enter a valid integer.\n");
+            printf("Please enter a valid integer\n");
             continue;
         }
         if (guess < 1 || guess > 100)
         {
-            printf("Please enter a valid integer.\n");
+            printf("Please enter a valid integer\n");
             continue;
         }
+        attempts++;
         if (guess > number)
         {
-            printf("Number to find is lower than %d.\n", guess);
+            printf("Number to find is lower than %d\n", guess);
         }
         else if (guess < number)
         {
-            printf("Number to find is greater than %d.\n", guess);
+            printf("Number to find is greater than %d\n", guess);
         }
         else
         {
-            printf("Congratulation ! You find the number %d in %d attempts.\n", guess, 6 - attempts);
+            printf("Congratulation ! You find the number %d in %d attempts\n", guess, attempts);
             return (0);
         }
-        attempts--;
     }
-    printf("Game over. The number was %d.\n", number);
 
     return (0);
 }
