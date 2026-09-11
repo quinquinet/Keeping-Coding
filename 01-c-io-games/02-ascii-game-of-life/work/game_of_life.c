@@ -257,7 +257,7 @@ int main(int argc, char **argv)
         generation--;
     }
 
-    free_grid(grid);
+    free_grid(&grid);
 
     return (0);
 }
