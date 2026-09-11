@@ -7,8 +7,8 @@ Hello World !
 ## Instructions
 
 Allowed functions: *`write`*
-Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output.
 
+Create a program in a file named `hello_world.c` that prints `Hello World !` to the standard output.
 File must compile using `gcc -Wall -Wextra -Werror` to pass the validation.
 
 ## Help
